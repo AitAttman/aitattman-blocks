@@ -2,7 +2,7 @@
 	"name": "ait-blocks",
 	"version": "1.0.0",
 	"description": "Enable wordpress custom blocks like Side-panel, Search Box, Query, Button, Slider",
-	"author": "Ahmed Ait Attman",
+	"author": "Ahmed Ait Attman <aitattman@outlook.com> (https://aitattman.pages.dev)",
 	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",
 	"scripts": {
@@ -16,7 +16,7 @@
 		"make-pot": "wp i18n make-pot ./ languages/ait-blocks.pot --exclude=node_modules,build",
 		"make-mo": "wp i18n make-mo languages/",
 		"make-json": "wp i18n make-json languages/ --no-purge",
-		"zip-plugin": "mkdir -p ait-blocks && cp -r build languages ait-blocks.php readme.txt ait-blocks/ && zip -r plugin.zip . -i \"ait-blocks/*\" -m"
+		"zip-plugin": "mkdir -p ait-blocks && cp -r build languages ait-blocks.php README.md LICENSE.txt ait-blocks/ && zip -r plugin.zip . -i \"ait-blocks/*\" -m && mv plugin.zip docs/ait-blocks.zip"
 	},
 	"dependencies": {
 		"@wordpress/block-editor": "latest",

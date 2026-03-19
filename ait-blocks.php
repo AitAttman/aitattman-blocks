@@ -8,6 +8,7 @@
  * Requires PHP:      8.1
  * Author:            Ahmed Ait Attman <aitattman@outlook.com>
  * Author URI:        https://aitattman.pages.dev
+ * Plugin URI:        https://github.com/AitAttman/ait-blocks
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       ait-blocks
