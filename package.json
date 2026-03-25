@@ -16,7 +16,7 @@
 		"make-pot": "wp i18n make-pot ./ languages/ait-blocks.pot --exclude=node_modules,build",
 		"make-mo": "wp i18n make-mo languages/",
 		"make-json": "wp i18n make-json languages/ --no-purge",
-		"zip-plugin": "mkdir -p ait-blocks && cp -r build languages ait-blocks.php README.md LICENSE.txt ait-blocks/ && zip -r plugin.zip . -i \"ait-blocks/*\" -m && mv plugin.zip docs/ait-blocks.zip"
+		"zip-plugin": "mkdir -p ait-blocks && cp -r build languages ait-blocks.php README.md LICENSE.txt ait-blocks/ && zip -r plugin.zip . -i \"ait-blocks/*\" -m"
 	},
 	"dependencies": {
 		"@wordpress/block-editor": "latest",
