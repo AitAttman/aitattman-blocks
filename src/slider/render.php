@@ -1,5 +1,10 @@
 <?php
-
+if (! defined('ABSPATH')) {
+	/**
+	 * Exit if accessed directly.
+	 */
+	exit;
+}
 /**
  * @see slider by Ait Attman: https://github.com/AitAttman/Slider
  * Render callback / template for the dynamic block
@@ -38,11 +43,11 @@ foreach ($attributes as $k => $v) {
 <?php if ($query->have_posts()): ?>
 	<?php do_action('ait_blocks_slider_before', $attributes['anchor'] ?? ''); ?>
 	<div
-		<?php echo get_block_wrapper_attributes([
+		<?php echo esc_attr(get_block_wrapper_attributes([
 			'id' => $attributes['anchor'] ?? null,
 			'class' => 'slider'
-		]); ?>
-		<?php echo implode(' ', $dataAttributes); ?>>
+		])); ?>
+		<?php echo esc_attr(implode(' ', $dataAttributes)); ?>>
 		<div class="slides">
 			<?php do_action('ait_blocks_slider_slides', $attributes['anchor'] ?? ''); ?>
 			<?php while ($query->have_posts()):

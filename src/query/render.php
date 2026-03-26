@@ -1,4 +1,11 @@
 <?php
+if (! defined('ABSPATH')) {
+	/**
+	 * Exit if accessed directly.
+	 */
+	exit;
+}
+
 global $wp_query;
 $query = $wp_query;
 /**
@@ -80,12 +87,14 @@ $getPageUrl = function ($pageNum) {
 	return get_pagenum_link($pageNum);
 };
 if ($attributes['showItemsFoundMessage']) {
-	echo '<p class="rp-items-found-message">' . sprintf(__('Found <b>%d</b> items', 'ait-blocks'), $postsCount) . '</p>';
+	/* translators: %d: number of posts found */
+	$message = sprintf(esc_html__('Found %d items', 'ait-blocks'), $postsCount);
+	echo '<p class="rp-items-found-message">' . str_replace($postsCount, '<b>' . $postsCount . '</b>', $message) . '</p>';
 }
 ?>
 
 <?php if ($query->have_posts()): ?>
-	<div<?php echo empty($classNames) ? '' : ' class="' . implode(' ', $classNames) . '"'; ?><?php echo empty($attributes['anchor']) ? '' : ' id="' . esc_attr(trim($attributes['anchor'])) . '"'; ?>>
+	<div<?php echo empty($classNames) ? '' : ' class="' . esc_attr(implode(' ', $classNames)) . '"'; ?><?php echo empty($attributes['anchor']) ? '' : ' id="' . esc_attr(trim($attributes['anchor'])) . '"'; ?>>
 		<?php while ($query->have_posts()):
 			$query->the_post();
 			$thumbnail_url = get_the_post_thumbnail_url(null, $attributes["thumbnailSize"] ?? 'large');
@@ -108,17 +117,17 @@ if ($attributes['showItemsFoundMessage']) {
 					</div>
 				<?php endif; ?>
 				<div class="post-info">
-					<div class="post-title"><a href="<?php echo get_the_permalink(); ?>">
+					<div class="post-title"><a href="<?php echo esc_attr(get_the_permalink()); ?>">
 							<h2><?php the_title(); ?></h2>
 						</a></div>
 					<?php if (!empty($author_name)): ?>
-						<div class="author"><span><?php echo $author_name; ?></span></div>
+						<div class="author"><span><?php echo esc_html($author_name); ?></span></div>
 					<?php endif; ?>
 					<?php if (!empty($attributes['showDate'])) : ?>
-						<div class="post-date"><span><?php echo get_the_date('M j, Y'); ?></span></div>
+						<div class="post-date"><span><?php echo esc_html(get_the_date('M j, Y')); ?></span></div>
 					<?php endif; ?>
 					<?php if (!empty($attributes['showExcerpt']) && $excerpt = get_the_excerpt()) : ?>
-						<div class="post-snippet"><span><?php echo mb_substr($excerpt, 0, $attributes['excerptLength'] ?? 100, 'UTF-8'); ?></span></div>
+						<div class="post-snippet"><span><?php echo esc_html(mb_substr($excerpt, 0, $attributes['excerptLength'] ?? 100, 'UTF-8')); ?></span></div>
 					<?php endif; ?>
 				</div>
 			</div>
@@ -132,19 +141,19 @@ if ($attributes['showItemsFoundMessage']) {
 				<ul>
 					<?php
 					if ($currentPage > 4) {
-						echo "<li><a class='first' href='" . esc_attr($getPageUrl(1)) . "'>" . __('First', 'ait-blocks') . "</a></li>";
+						echo "<li><a class='first' href='" . esc_attr($getPageUrl(1)) . "'>" . esc_html__('First', 'ait-blocks') . "</a></li>";
 					}
 					for ($i = max(1, $currentPage - 3); $i < $currentPage; $i++) {
-						echo "<li><a href='" . esc_attr($getPageUrl($i)) . "'>$i</a></li>";
+						echo "<li><a href='" . esc_attr($getPageUrl($i)) . "'>" . esc_html($i) . "</a></li>";
 					}
 					if ($currentPage) {
-						echo '<li class="current"><span>' . $currentPage . '</span></li>';
+						echo '<li class="current"><span>' . esc_html($currentPage) . '</span></li>';
 					}
 					for ($i = $currentPage + 1; ($i <= $totalPages) && $i < ($currentPage + 4); $i++) {
-						echo "<li><a href='" . esc_attr($getPageUrl($i)) . "'>$i</a></li>";
+						echo "<li><a href='" . esc_attr($getPageUrl($i)) . "'>" . esc_html($i) . "</a></li>";
 					}
 					if ($currentPage < $totalPages - 3) {
-						echo "<li><a class='last' href='" . esc_attr($getPageUrl($totalPages)) . "'>" . __('Last', 'ait-blocks') . "</a></li>";
+						echo "<li><a class='last' href='" . esc_attr($getPageUrl($totalPages)) . "'>" . esc_html__('Last', 'ait-blocks') . "</a></li>";
 					}
 					?>
 				</ul>

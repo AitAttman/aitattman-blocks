@@ -2,10 +2,11 @@
 
 /**
  * Plugin Name:       Ait Blocks
- * Description:       Enable wordpress custom blocks like Side-panel, Search Box, Query, Button, Slider
+ * Description:       Enable Wordpress custom blocks like Side-panel, Search Box, Query Posts, Button, Slider and Theme Controllers
  * Version:           1.0.0
  * Requires at least: 6.4
  * Requires PHP:      8.1
+ * Tested up to:      6.9
  * Author:            Ahmed Ait Attman <aitattman@outlook.com>
  * Author URI:        https://aitattman.pages.dev
  * Plugin URI:        https://github.com/AitAttman/ait-blocks
@@ -16,19 +17,29 @@
  */
 
 if (! defined('ABSPATH')) {
-	exit; // Exit if accessed directly.
-}
-add_action('plugins_loaded', function () {
 	/**
-	 * load php translations
-	 * Note: this did not work inside 'init' hook, and used 'plugins_loaded' instead
+	 * Exit if accessed directly.
 	 */
+	exit;
+}
+
+/**
+ * Note: if the plugin is hosted on Wordpress Plugins directory, there is no need for load_plugin_textdomain() function
+ * Wordpress loads the text domain automatically
+ *==================================
+ * load php translations
+ * Note: this did not work inside 'init' hook, and used 'plugins_loaded' instead
+ * =============================
+add_action('plugins_loaded', function () {
 	load_plugin_textdomain(
 		'ait-blocks',
 		false,
 		dirname(plugin_basename(__FILE__)) . '/languages'
 	);
 });
+=========================== **/
+
+
 add_action('init', function () {
 	/**
 	 * Registers the block(s) metadata from the `blocks-manifest.php` and registers the block type(s)

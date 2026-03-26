@@ -1,17 +1,24 @@
 <?php
 
+if (! defined('ABSPATH')) {
+	/**
+	 * Exit if accessed directly.
+	 */
+	exit;
+}
+
 /**
  * Render search box block
  */
 $post_type = get_post_type() !== 'page' ? get_post_type() : 'post';
 do_action('ait_blocks_searchbox_before_form', $attributes['anchor'] ?? '');
 ?>
-<form <?php echo get_block_wrapper_attributes([
+<form <?php echo esc_attr(get_block_wrapper_attributes([
 			'id' => $attributes['anchor'] ?? null,
 			'action' => '/',
 			'data-element' => 'ait_searchbox',
 			'method' => 'GET'
-		]); ?>>
+		])); ?>>
 	<div class="container">
 		<input type="text" name="<?php echo esc_attr($attributes['inputName'] ?? 's'); ?>" placeholder="<?php echo esc_attr(($attributes['placeholder'] ?? null) ?: __('search...', 'ait-blocks')); ?>" value="<?php echo esc_attr(get_search_query()); ?>">
 		<button>
@@ -31,7 +38,7 @@ do_action('ait_blocks_searchbox_before_form', $attributes['anchor'] ?? '');
 					<circle cx="11" cy="11" r="8" />
 				</svg>
 			<?php else: ?>
-				<?php echo apply_filters('ait_blocks_searchbox_label', $attributes['searchLabel'] ?? __('Search', 'ait-blocks'), $attributes['anchor'] ?? ''); ?>
+				<?php echo esc_html(apply_filters('ait_blocks_searchbox_label', $attributes['searchLabel'] ?? __('Search', 'ait-blocks'), $attributes['anchor'] ?? '')); ?>
 			<?php endif; ?>
 		</button>
 	</div>
