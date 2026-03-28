@@ -4,13 +4,13 @@ Wordpess is powerful content management system, and the blocks concept made it e
 
 However, wordpress itself does not provide some blocks you likely need for your website such as **Slider/Carousel** to display content in slides, **Side panels** on left, right, top and bottom position to display content like mobile navigation menu.
 ## Installation
-1. Clone this repository or download it.
-2. Put the following files in a folder named "**ait-blocks**":
+1. Clone this repository or download the zip file.
+2. Put the following files/folders in a folder named "**ait-blocks**":
 	* **ait-blocks.php**
 	* **build**
 	* **languages**
 2. Zip **ait-blocks** so the file becomes for example **plugin.zip**
-4. Go your Wordpress dashboard > plugins > add plugin > upload plugin > choose file plugin.zip.
+4. Go to your Wordpress site dashboard > plugins > add plugin > upload plugin > choose file plugin.zip.
 
 ## Available Blocks
 * Slider
