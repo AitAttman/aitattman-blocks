@@ -17,8 +17,7 @@
 		"make-mo": "wp i18n make-mo languages/",
 		"make-json": "wp i18n make-json languages/ --no-purge",
 		"zip-plugin": "mkdir -p ait-blocks && cp -r build languages ait-blocks.php README.md LICENSE.txt ait-blocks/ && zip -r plugin.zip . -i 'ait-blocks/*' -m",
-		"zip-wp": "mkdir -p ait-blocks && cp -r ait-blocks.php build readme.txt LICENSE.txt assets ait-blocks/ && zip -r wp-ait-blocks.zip . -i 'ait-blocks/*' -m",
-		"zip-for-wp": "rm -f wp-ait-blocks.zip && zip -r wp-ait-blocks.zip . -x 'docs/*' 'src/*' '.git/*' 'node_modules/*' '.gitignore' '.editorconfig' '*.zip' 'README.md' 'package.json' 'package-lock.json' 'languages/*'"
+		"zip-for-wp": "mkdir -p ait-blocks && cp -r ait-blocks.php build readme.txt LICENSE.txt assets ait-blocks/ && zip -r wp-ait-blocks.zip . -i 'ait-blocks/*' -m"
 	},
 	"dependencies": {
 		"@wordpress/block-editor": "latest",

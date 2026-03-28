@@ -1,0 +1,6 @@
+If the plugin is installed from github, the plugin file (ait-blocks.php) header must
+contain this line, otherwise translations won't work:
+Domain Path:       /languages
+
+If the plugin is installed from Wordpress plugins directory, there is no need for
+this line because translation files are lowded from wp-content/languages/plugins.
