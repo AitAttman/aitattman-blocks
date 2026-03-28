@@ -1,0 +1,79 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "aitattman/query",
+  "version": "0.1.0",
+  "title": "Query Posts",
+  "category": "widgets",
+  "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-layout-list-icon lucide-layout-list'><rect width='7' height='7' x='3' y='3' rx='1'/><rect width='7' height='7' x='3' y='14' rx='1'/><path d='M14 4h7'/><path d='M14 9h7'/><path d='M14 15h7'/><path d='M14 20h7'/></svg>",
+  "description": "Custom query to display posts filtered by category and post type.",
+  "attributes": {
+    "postType": {
+      "type": "string",
+      "default": "post"
+    },
+    "anchor": {
+      "type": "string",
+      "default": ""
+    },
+    "category": {
+      "type": "string",
+      "default": ""
+    },
+    "taxonomy": {
+      "type": "string",
+      "default": "category"
+    },
+    "thumbnailSize": {
+      "type": "string",
+      "default": "large"
+    },
+    "numPosts": {
+      "type": "integer",
+      "default": 5
+    },
+    "showAuthorName": {
+      "type": "boolean",
+      "default": true
+    },
+    "showDate": {
+      "type": "boolean",
+      "default": true
+    },
+    "showExcerpt": {
+      "type": "boolean",
+      "default": false
+    },
+    "excerptLength": {
+      "type": "integer",
+      "default": 100
+    },
+    "isRelatedPosts": {
+      "type": "boolean",
+      "default": false
+    },
+    "showItemsFoundMessage": {
+      "type": "boolean",
+      "default": false
+    },
+    "usePagination": {
+      "type": "boolean",
+      "default": false
+    },
+    "useSearch": {
+      "type": "boolean",
+      "default": false
+    },
+    "defaultQuery": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "anchor": true
+  },
+  "textdomain": "ait-blocks",
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

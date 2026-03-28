@@ -29,4 +29,5 @@ node_modules/
 # dotenv environment variables file
 .env
 
-build
+# upload build folder to allow users to install the plugin from github.
+#build

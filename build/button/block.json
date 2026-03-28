@@ -1,0 +1,68 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "aitattman/button",
+  "version": "0.1.0",
+  "title": "Button",
+  "category": "widgets",
+  "icon": "<svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='currentColor'><path d='M200-200q-33 0-56.5-23.5T120-280v-400q0-33 23.5-56.5T200-760h560q33 0 56.5 23.5T840-680v400q0 33-23.5 56.5T760-200H200Zm0-80h560v-400H200v400Zm0 0v-400 400Z'/></svg>",
+  "description": "Display button or link with integrated SVG icon support.",
+  "example": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "default": "My Text"
+    },
+    "url": {
+      "type": "string",
+      "default": ""
+    },
+    "tag": {
+      "type": "string",
+      "default": "button"
+    },
+    "icon": {
+      "type": "string",
+      "default": "<svg width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-heart-plus-icon lucide-heart-plus'><path d='m14.479 19.374-.971.939a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5a5.2 5.2 0 0 1-.219 1.49'/><path d='M15 15h6'/><path d='M18 12v6'/></svg>"
+    },
+    "hasIcon": {
+      "type": "boolean",
+      "default": true
+    },
+    "isColumn": {
+      "type": "boolean",
+      "default": false
+    },
+    "isReverse": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "color": {
+      "background": true,
+      "text": true,
+      "gradients": true
+    },
+    "spacing": {
+      "padding": true,
+      "margin": true
+    },
+    "typography": {
+      "fontSize": true
+    },
+    "align": true,
+    "html": true,
+    "shadow": true,
+    "border": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true
+    }
+  },
+  "textdomain": "ait-blocks",
+  "style": "file:./style-index.css",
+  "editorScript": "file:./index.js"
+}

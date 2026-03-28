@@ -1,0 +1,64 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "aitattman/slider",
+  "version": "0.1.0",
+  "title": "Slider",
+  "category": "widgets",
+  "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-gallery-horizontal-icon lucide-gallery-horizontal'><path d='M2 3v18'/><rect width='12' height='18' x='6' y='3' rx='2'/><path d='M22 3v18'/></svg>",
+  "description": "Display your latest posts in a responsive, single-slide carousel.",
+  "attributes": {
+    "anchor": {
+      "type": "string",
+      "default": ""
+    },
+    "postType": {
+      "type": "string",
+      "default": "post"
+    },
+    "category": {
+      "type": "string",
+      "default": ""
+    },
+    "taxonomy": {
+      "type": "string",
+      "default": "category"
+    },
+    "thumbnailSize": {
+      "type": "string",
+      "default": "full"
+    },
+    "numPosts": {
+      "type": "integer",
+      "default": 5
+    },
+    "caption": {
+      "type": "boolean",
+      "default": true
+    },
+    "navDots": {
+      "type": "boolean",
+      "default": true
+    },
+    "navButtons": {
+      "type": "boolean",
+      "default": true
+    },
+    "autoplay": {
+      "type": "boolean",
+      "default": false
+    },
+    "interval": {
+      "type": "integer",
+      "default": 5000
+    }
+  },
+  "supports": {
+    "anchor": true
+  },
+  "textdomain": "ait-blocks",
+  "editorScript": "file:./index.js",
+  "viewScript": "file:./view.js",
+  "style": "file:./index.css",
+  "render": "file:./render.php"
+}

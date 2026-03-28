@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "aitattman/sidepanel",
+  "version": "0.1.0",
+  "title": "Side Panel",
+  "category": "widgets",
+  "icon": "<svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#1f1f1f'><path d='M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm280-80h280v-560H480v560Z'/></svg>",
+  "description": "Slide-out drawer for any side of the screen, triggered by a button you choose.",
+  "example": {},
+  "attributes": {
+    "triggers": {
+      "type": "string",
+      "default": "ait-sidepanel-open"
+    },
+    "position": {
+      "type": "string",
+      "default": "start"
+    }
+  },
+  "supports": {
+    "html": true,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "color": {
+      "background": true,
+      "text": true,
+      "gradients": true
+    },
+    "spacing": {
+      "padding": true
+    }
+  },
+  "textdomain": "ait-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "viewStyle": "file:./view.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

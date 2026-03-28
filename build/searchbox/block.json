@@ -1,0 +1,45 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "aitattman/searchbox",
+  "version": "1.0.0",
+  "title": "Search Box",
+  "category": "widgets",
+  "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-search-icon lucide-search'><path d='m21 21-4.34-4.34'/><circle cx='11' cy='11' r='8'/></svg>",
+  "description": "Search posts filtered specifically by the active post type.",
+  "example": {},
+  "attributes": {
+    "anchor": {
+      "type": "string",
+      "default": ""
+    },
+    "placeholder": {
+      "type": "string",
+      "default": "search..."
+    },
+    "showIcon": {
+      "type": "boolean",
+      "default": true
+    },
+    "searchLabel": {
+      "type": "string",
+      "default": "Search"
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "html": true,
+    "color": {
+      "background": true,
+      "text": true,
+      "gradients": true
+    },
+    "spacing": {
+      "padding": true
+    }
+  },
+  "textdomain": "ait-blocks",
+  "editorScript": "file:./index.js",
+  "style": "file:./index.css",
+  "render": "file:./render.php"
+}
