@@ -1,4 +1,4 @@
-=== AitAttman Blocks for Gutenberg Editor ===
+=== AitAttman Blocks ===
 Contributors: aitattman
 Tags: Block Editor, Side-panels, Buttons, Carousel
 Requires at least: 6.4
@@ -8,7 +8,7 @@ Stable tag: 1.2.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Enable WordPress custom blocks like Side-panel, Search Box, Query Posts, Button, Slider and Theme Controllers.
+Some essential custom blocks for the Gutenberg Editor to expand WordPress site functionality.
 
 == Description ==
 

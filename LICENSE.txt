@@ -1,4 +1,4 @@
-AitAttman Blocks for Gutenberg Editor
+AitAttman Blocks
 Copyright (C) 2026 Ahmed Ait Attman
 
 This program is free software; you can redistribute it and/or modify

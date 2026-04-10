@@ -1,4 +1,4 @@
-# Copyright (C) 2026 AitAttman Blocks for Gutenberg Editor
+# Copyright (C) 2026 AitAttman Blocks
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
@@ -28,8 +28,8 @@ msgstr "https://github.com/AitAttman/aitattman-blocks"
 
 #. Description of the plugin
 #: aitattman-blocks.php
-msgid "Enable Wordpress custom blocks like Side-panel, Search Box, Query Posts, Button, Slider and Theme Controllers"
-msgstr "Habilita bloques personalizados de WordPress como panel lateral, caja de búsqueda, consulta de entradas, botón, carrusel y controladores de tema."
+msgid "Some essential custom blocks for the Gutenberg Editor to expand WordPress site functionality."
+msgstr "Algunos bloques personalizados esenciales para el Editor Gutenberg que amplían la funcionalidad del sitio WordPress."
 
 #. Author of the plugin
 #: aitattman-blocks.php
@@ -45,22 +45,22 @@ msgstr "https://aitattman.pages.dev"
 #: build/query/render.php:91
 #, php-format
 msgid "Found %d items"
-msgstr "Se encontraron %d elementos"
+msgstr "Se han encontrado %d elementos"
 
-#: build/query/render.php:144
+#: build/query/render.php:146
 msgid "First"
 msgstr "Primero"
 
-#: build/query/render.php:156
+#: build/query/render.php:158
 msgid "Last"
 msgstr "Último"
 
-#: build/searchbox/render.php:23
+#: build/searchbox/render.php:24
 #: build/searchbox/index.js:1
 msgid "search..."
 msgstr "buscar..."
 
-#: build/searchbox/render.php:41
+#: build/searchbox/render.php:35
 #: build/searchbox/index.js:1
 msgid "Search"
 msgstr "Buscar"
@@ -97,7 +97,7 @@ msgstr "URL"
 
 #: build/button/index.js:1
 msgid "Column Layout"
-msgstr "Diseño de columnas"
+msgstr "Disposición en columnas"
 
 #: build/button/index.js:1
 msgid "Reverse"
@@ -117,7 +117,7 @@ msgstr "Consulta"
 
 #: build/query/index.js:1
 msgid "Use default query"
-msgstr "Usar consulta por defecto"
+msgstr "Usar consulta predeterminada"
 
 #: build/query/index.js:1
 msgid "Show items found message"
@@ -195,7 +195,7 @@ msgstr "Nota: esto es solo un ejemplo, no la vista previa real"
 
 #: build/query/index.js:1
 msgid "Found 33 items"
-msgstr "Se encontraron 33 elementos"
+msgstr "Se han encontrado 33 elementos"
 
 #: build/searchbox/index.js:1
 msgid "Show icon"
@@ -207,7 +207,7 @@ msgstr "Etiqueta de búsqueda"
 
 #: build/searchbox/index.js:1
 msgid "Placeholder"
-msgstr "Texto de relleno"
+msgstr "Texto de marcador"
 
 #: build/sidepanel/index.js:1
 msgid "Triggers class name"
@@ -279,11 +279,11 @@ msgstr "Solo si la reproducción automática está activada"
 
 #: build/theme-controllers/index.js:1
 msgid "Light Icon"
-msgstr "Icono modo claro"
+msgstr "Icono de modo claro"
 
 #: build/theme-controllers/index.js:1
 msgid "Dark Icon"
-msgstr "Icono modo oscuro"
+msgstr "Icono de modo oscuro"
 
 #: build/theme-controllers/index.js:1
 msgid "System Icon"
@@ -327,17 +327,17 @@ msgstr "Panel lateral"
 #: build/sidepanel/block.json
 msgctxt "block description"
 msgid "Slide-out drawer for any side of the screen, triggered by a button you choose."
-msgstr "Cajón deslizante para cualquier lado de la pantalla, activado por el botón que elijas."
+msgstr "Panel deslizante para cualquier lado de la pantalla, activado por el botón que elijas."
 
 #: build/slider/block.json
 msgctxt "block title"
 msgid "Slider"
-msgstr "Carrusel"
+msgstr "Slider"
 
 #: build/slider/block.json
 msgctxt "block description"
 msgid "Display your latest posts in a responsive, single-slide carousel."
-msgstr "Muestra tus últimas entradas en un carrousel adaptativo de una sola diapositiva."
+msgstr "Muestra tus últimas entradas en un carrusel adaptable de una sola diapositiva."
 
 #: build/theme-controllers/block.json
 msgctxt "block title"
@@ -347,4 +347,4 @@ msgstr "Controladores de tema"
 #: build/theme-controllers/block.json
 msgctxt "block description"
 msgid "Let user choose between light and dark modes anytime."
-msgstr "Permite al usuario elegir entre los modos claro y oscuro en cualquier momento."
+msgstr "Permite al usuario elegir entre el modo claro y oscuro en cualquier momento."

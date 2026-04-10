@@ -1,4 +1,4 @@
-# Copyright (C) 2026 AitAttman Blocks for Gutenberg Editor
+# Copyright (C) 2026 AitAttman Blocks
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
@@ -28,8 +28,8 @@ msgstr "https://github.com/AitAttman/aitattman-blocks"
 
 #. Description of the plugin
 #: aitattman-blocks.php
-msgid "Enable Wordpress custom blocks like Side-panel, Search Box, Query Posts, Button, Slider and Theme Controllers"
-msgstr "Activez des blocs personnalisés WordPress tels que le Panneau latéral, la Boîte de recherche, la Requête d'articles, le Bouton, le Curseur et les Contrôleurs de thème."
+msgid "Some essential custom blocks for the Gutenberg Editor to expand WordPress site functionality."
+msgstr "Quelques blocs personnalisés essentiels pour l'éditeur Gutenberg afin d'étendre les fonctionnalités de votre site WordPress."
 
 #. Author of the plugin
 #: aitattman-blocks.php
@@ -47,20 +47,20 @@ msgstr "https://aitattman.pages.dev"
 msgid "Found %d items"
 msgstr "%d éléments trouvés"
 
-#: build/query/render.php:144
+#: build/query/render.php:146
 msgid "First"
 msgstr "Premier"
 
-#: build/query/render.php:156
+#: build/query/render.php:158
 msgid "Last"
 msgstr "Dernier"
 
-#: build/searchbox/render.php:23
+#: build/searchbox/render.php:24
 #: build/searchbox/index.js:1
 msgid "search..."
-msgstr "recherche..."
+msgstr "rechercher..."
 
-#: build/searchbox/render.php:41
+#: build/searchbox/render.php:35
 #: build/searchbox/index.js:1
 msgid "Search"
 msgstr "Rechercher"
@@ -121,25 +121,25 @@ msgstr "Utiliser la requête par défaut"
 
 #: build/query/index.js:1
 msgid "Show items found message"
-msgstr "Afficher le message des éléments trouvés"
+msgstr "Afficher le message d'éléments trouvés"
 
 #: build/query/index.js:1
 msgid "For related Posts"
-msgstr "Pour les articles similaires"
+msgstr "Pour les articles liés"
 
 #: build/query/index.js:1
 msgid "N.b. works in single posts"
-msgstr "N.B. fonctionne dans les articles uniques"
+msgstr "N.B. fonctionne dans les articles seuls"
 
 #: build/query/index.js:1
 #: build/slider/index.js:1
 msgid "Post Type"
-msgstr "Type d'article"
+msgstr "Type de contenu"
 
 #: build/query/index.js:1
 #: build/slider/index.js:1
 msgid "eg: post, page, product"
-msgstr "ex: post, page, product"
+msgstr "ex : post, page, product"
 
 #: build/query/index.js:1
 #: build/slider/index.js:1
@@ -191,7 +191,7 @@ msgstr "Utiliser la recherche"
 
 #: build/query/index.js:1
 msgid "N.B. this is just an example, not the actual preview"
-msgstr "N.B. ceci est juste un exemple, pas l'aperçu réel"
+msgstr "N.B. ceci est juste un exemple, pas la prévisualisation réelle"
 
 #: build/query/index.js:1
 msgid "Found 33 items"
@@ -251,7 +251,7 @@ msgstr "Slug du terme de taxonomie"
 
 #: build/slider/index.js:1
 msgid "eg: category, post_tag, product_cat, product_tag"
-msgstr "ex: category, post_tag, product_cat, product_tag"
+msgstr "ex : category, post_tag, product_cat, product_tag"
 
 #: build/slider/index.js:1
 msgid "Show Caption"
@@ -275,7 +275,7 @@ msgstr "Intervalle"
 
 #: build/slider/index.js:1
 msgid "Only if autoplay is enabled"
-msgstr "Seulement si la lecture automatique est activée"
+msgstr "Uniquement si la lecture automatique est activée"
 
 #: build/theme-controllers/index.js:1
 msgid "Light Icon"
@@ -297,7 +297,7 @@ msgstr "Bouton"
 #: build/button/block.json
 msgctxt "block description"
 msgid "Display button or link with integrated SVG icon support."
-msgstr "Affiche un bouton ou un lien avec prise en charge intégrée des icônes SVG."
+msgstr "Afficher un bouton ou un lien avec support intégré des icônes SVG."
 
 #: build/query/block.json
 msgctxt "block title"
@@ -307,17 +307,17 @@ msgstr "Requête d'articles"
 #: build/query/block.json
 msgctxt "block description"
 msgid "Custom query to display posts filtered by category and post type."
-msgstr "Requête personnalisée pour afficher des articles filtrés par catégorie et type d'article."
+msgstr "Requête personnalisée pour afficher des articles filtrés par catégorie et type de contenu."
 
 #: build/searchbox/block.json
 msgctxt "block title"
 msgid "Search Box"
-msgstr "Boîte de recherche"
+msgstr "Champ de recherche"
 
 #: build/searchbox/block.json
 msgctxt "block description"
 msgid "Search posts filtered specifically by the active post type."
-msgstr "Rechercher des articles filtrés spécifiquement par le type d'article actif."
+msgstr "Rechercher des articles filtrés spécifiquement par le type de contenu actif."
 
 #: build/sidepanel/block.json
 msgctxt "block title"
@@ -327,12 +327,12 @@ msgstr "Panneau latéral"
 #: build/sidepanel/block.json
 msgctxt "block description"
 msgid "Slide-out drawer for any side of the screen, triggered by a button you choose."
-msgstr "Tiroir coulissant pour n'importe quel côté de l'écran, déclenché par un bouton de votre choix."
+msgstr "Tiroir coulissant pour n'importe quel côté de l'écran, déclenché par le bouton de votre choix."
 
 #: build/slider/block.json
 msgctxt "block title"
 msgid "Slider"
-msgstr "Curseur"
+msgstr "Slider"
 
 #: build/slider/block.json
 msgctxt "block description"
@@ -347,4 +347,4 @@ msgstr "Contrôleurs de thème"
 #: build/theme-controllers/block.json
 msgctxt "block description"
 msgid "Let user choose between light and dark modes anytime."
-msgstr "Permet à l'utilisateur de choisir entre les modes clair et sombre à tout moment."
+msgstr "Permettre à l'utilisateur de choisir entre les modes clair et sombre à tout moment."

@@ -1,4 +1,4 @@
-# Copyright (C) 2026 AitAttman Blocks for Gutenberg Editor
+# Copyright (C) 2026 AitAttman Blocks
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
@@ -28,8 +28,8 @@ msgstr "https://github.com/AitAttman/aitattman-blocks"
 
 #. Description of the plugin
 #: aitattman-blocks.php
-msgid "Enable Wordpress custom blocks like Side-panel, Search Box, Query Posts, Button, Slider and Theme Controllers"
-msgstr "Aktivieren Sie benutzerdefinierte WordPress-Blöcke wie Seitenleiste, Suchfeld, Beitragsabfrage, Button, Slider und Theme-Controller."
+msgid "Some essential custom blocks for the Gutenberg Editor to expand WordPress site functionality."
+msgstr "Einige essenzielle benutzerdefinierte Blöcke für den Gutenberg-Editor zur Erweiterung der WordPress-Funktionalität."
 
 #. Author of the plugin
 #: aitattman-blocks.php
@@ -47,23 +47,23 @@ msgstr "https://aitattman.pages.dev"
 msgid "Found %d items"
 msgstr "%d Elemente gefunden"
 
-#: build/query/render.php:144
+#: build/query/render.php:146
 msgid "First"
 msgstr "Erster"
 
-#: build/query/render.php:156
+#: build/query/render.php:158
 msgid "Last"
 msgstr "Letzter"
 
-#: build/searchbox/render.php:23
+#: build/searchbox/render.php:24
 #: build/searchbox/index.js:1
 msgid "search..."
 msgstr "suchen..."
 
-#: build/searchbox/render.php:41
+#: build/searchbox/render.php:35
 #: build/searchbox/index.js:1
 msgid "Search"
-msgstr "Suche"
+msgstr "Suchen"
 
 #: build/button/index.js:1
 msgid "Button"
@@ -139,7 +139,7 @@ msgstr "Inhaltstyp"
 #: build/query/index.js:1
 #: build/slider/index.js:1
 msgid "eg: post, page, product"
-msgstr "z.B. post, page, product"
+msgstr "z.B.: post, page, product"
 
 #: build/query/index.js:1
 #: build/slider/index.js:1
@@ -171,7 +171,7 @@ msgstr "Datum anzeigen"
 
 #: build/query/index.js:1
 msgid "Show Excerpt"
-msgstr "Textauszug anzeigen"
+msgstr "Auszug anzeigen"
 
 #: build/query/index.js:1
 msgid "Excerpt length"
@@ -179,7 +179,7 @@ msgstr "Auszugslänge"
 
 #: build/query/index.js:1
 msgid "Number of characters for excerpt."
-msgstr "Anzahl der Zeichen für den Textauszug."
+msgstr "Anzahl der Zeichen für den Auszug."
 
 #: build/query/index.js:1
 msgid "Use pagination"
@@ -235,15 +235,15 @@ msgstr "Unten"
 
 #: build/slider/index.js:1
 msgid "Thumbnail will appear Here"
-msgstr "Vorschaubild erscheint hier"
+msgstr "Das Vorschaubild erscheint hier"
 
 #: build/slider/index.js:1
 msgid "Caption will be shown here..."
-msgstr "Beschriftung wird hier angezeigt..."
+msgstr "Die Beschriftung wird hier angezeigt..."
 
 #: build/slider/index.js:1
 msgid "Posts Settings"
-msgstr "Beitragseinstellungen"
+msgstr "Beitrags-Einstellungen"
 
 #: build/slider/index.js:1
 msgid "Taxonomy term slug"
@@ -251,7 +251,7 @@ msgstr "Taxonomie-Begriff-Slug"
 
 #: build/slider/index.js:1
 msgid "eg: category, post_tag, product_cat, product_tag"
-msgstr "z.B. category, post_tag, product_cat, product_tag"
+msgstr "z.B.: category, post_tag, product_cat, product_tag"
 
 #: build/slider/index.js:1
 msgid "Show Caption"
@@ -259,11 +259,11 @@ msgstr "Beschriftung anzeigen"
 
 #: build/slider/index.js:1
 msgid "Navigation Buttons"
-msgstr "Navigationstasten"
+msgstr "Navigations-Buttons"
 
 #: build/slider/index.js:1
 msgid "Navigation Dots"
-msgstr "Navigationspunkte"
+msgstr "Navigations-Punkte"
 
 #: build/slider/index.js:1
 msgid "Autoplay"
@@ -297,17 +297,17 @@ msgstr "Button"
 #: build/button/block.json
 msgctxt "block description"
 msgid "Display button or link with integrated SVG icon support."
-msgstr "Zeigen Sie einen Button oder Link mit integrierter SVG-Icon-Unterstützung an."
+msgstr "Zeige einen Button oder Link mit integrierter SVG-Icon-Unterstützung an."
 
 #: build/query/block.json
 msgctxt "block title"
 msgid "Query Posts"
-msgstr "Beitragsabfrage"
+msgstr "Beiträge abfragen"
 
 #: build/query/block.json
 msgctxt "block description"
 msgid "Custom query to display posts filtered by category and post type."
-msgstr "Benutzerdefinierte Abfrage zur Anzeige von Beiträgen, gefiltert nach Kategorie und Inhaltstyp."
+msgstr "Benutzerdefinierte Abfrage zum Anzeigen von Beiträgen, gefiltert nach Kategorie und Inhaltstyp."
 
 #: build/searchbox/block.json
 msgctxt "block title"
@@ -317,17 +317,17 @@ msgstr "Suchfeld"
 #: build/searchbox/block.json
 msgctxt "block description"
 msgid "Search posts filtered specifically by the active post type."
-msgstr "Suchen Sie nach Beiträgen, die speziell nach dem aktiven Inhaltstyp gefiltert sind."
+msgstr "Suche nach Beiträgen, speziell gefiltert nach dem aktiven Inhaltstyp."
 
 #: build/sidepanel/block.json
 msgctxt "block title"
 msgid "Side Panel"
-msgstr "Seitenleiste"
+msgstr "Seiten-Panel"
 
 #: build/sidepanel/block.json
 msgctxt "block description"
 msgid "Slide-out drawer for any side of the screen, triggered by a button you choose."
-msgstr "Ausziehbares Panel für jede Seite des Bildschirms, das durch einen von Ihnen gewählten Button ausgelöst wird."
+msgstr "Ausziehbares Panel für jede Bildschirmseite, ausgelöst durch einen Button Ihrer Wahl."
 
 #: build/slider/block.json
 msgctxt "block title"
@@ -337,14 +337,14 @@ msgstr "Slider"
 #: build/slider/block.json
 msgctxt "block description"
 msgid "Display your latest posts in a responsive, single-slide carousel."
-msgstr "Zeigen Sie Ihre neuesten Beiträge in einem responsiven Karussell mit einer Folie an."
+msgstr "Zeige deine neuesten Beiträge in einem responsiven Karussell an."
 
 #: build/theme-controllers/block.json
 msgctxt "block title"
 msgid "Theme Controllers"
-msgstr "Theme-Controller"
+msgstr "Theme-Steuerung"
 
 #: build/theme-controllers/block.json
 msgctxt "block description"
 msgid "Let user choose between light and dark modes anytime."
-msgstr "Ermöglicht dem Benutzer jederzeit den Wechsel zwischen hellem und dunklem Modus."
+msgstr "Ermöglicht dem Benutzer jederzeit den Wechsel zwischen Hell- und Dunkelmodus."
