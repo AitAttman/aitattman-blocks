@@ -1,350 +1,348 @@
-# Copyright (C) 2026 Ait Blocks
+# Copyright (C) 2026 AitAttman Blocks for Gutenberg Editor for Gutenberg Editor
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Ait Blocks 1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ait-blocks\n"
+"Project-Id-Version: AitAttman Blocks 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/aitattman-blocks\n"
 "Last-Translator: Ahmed Ait Attman <aitattman@outlook.com>\n"
-"Language: es_ES\n"
-"Language-Team: Spanish <es@li.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-03-27 08:36+0000\n"
-"PO-Revision-Date: 2026-03-27 09:58+0100\n"
+"POT-Creation-Date: 2026-03-27T08:36:40+00:00\n"
+"PO-Revision-Date: 2026-03-27T08:36:40+00:00\n"
 "X-Generator: WP-CLI 2.12.0\n"
-"X-Domain: ait-blocks\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: aitattman-blocks\n"
 
 #. Plugin Name of the plugin
-#: ait-blocks.php
-msgid "Ait Blocks"
-msgstr "Ait Blocks"
+#: aitattman-blocks.php
+msgid "AitAttman Blocks"
+msgstr ""
 
 #. Plugin URI of the plugin
-#: ait-blocks.php
-msgid "https://github.com/AitAttman/ait-blocks"
-msgstr "https://github.com/AitAttman/ait-blocks"
+#: aitattman-blocks.php
+msgid "https://github.com/AitAttman/aitattman-blocks"
+msgstr ""
 
 #. Description of the plugin
-#: ait-blocks.php
+#: aitattman-blocks.php
 msgid "Enable Wordpress custom blocks like Side-panel, Search Box, Query Posts, Button, Slider and Theme Controllers"
-msgstr "Habilita bloques personalizados de WordPress como panel lateral, caja de búsqueda, consulta de entradas, botón, carrusel y controladores de tema."
+msgstr ""
 
 #. Author of the plugin
-#: ait-blocks.php
+#: aitattman-blocks.php
 msgid "Ahmed Ait Attman <aitattman@outlook.com>"
-msgstr "Ahmed Ait Attman <aitattman@outlook.com>"
+msgstr ""
 
 #. Author URI of the plugin
-#: ait-blocks.php
+#: aitattman-blocks.php
 msgid "https://aitattman.pages.dev"
-msgstr "https://aitattman.pages.dev"
+msgstr ""
 
 #. translators: %d: number of posts found
 #: build/query/render.php:91
 #, php-format
 msgid "Found %d items"
-msgstr "Se encontraron %d elementos"
+msgstr ""
 
 #: build/query/render.php:144
 msgid "First"
-msgstr "Primero"
+msgstr ""
 
 #: build/query/render.php:156
 msgid "Last"
-msgstr "Último"
+msgstr ""
 
 #: build/searchbox/render.php:23
 #: build/searchbox/index.js:1
 msgid "search..."
-msgstr "buscar..."
+msgstr ""
 
 #: build/searchbox/render.php:41
 #: build/searchbox/index.js:1
 msgid "Search"
-msgstr "Buscar"
+msgstr ""
 
 #: build/button/index.js:1
 msgid "Button"
-msgstr "Botón"
+msgstr ""
 
 #: build/button/index.js:1
 msgid "Link"
-msgstr "Enlace"
+msgstr ""
 
 #: build/button/index.js:1
 msgid "Span"
-msgstr "Span"
+msgstr ""
 
 #: build/button/index.js:1
 msgid "Div"
-msgstr "Div"
+msgstr ""
 
 #: build/button/index.js:1
 #: build/searchbox/index.js:1
 #: build/theme-controllers/index.js:1
 msgid "Settings"
-msgstr "Ajustes"
+msgstr ""
 
 #: build/button/index.js:1
 msgid "Tag type"
-msgstr "Tipo de etiqueta"
+msgstr ""
 
 #: build/button/index.js:1
 msgid "Url"
-msgstr "URL"
+msgstr ""
 
 #: build/button/index.js:1
 msgid "Column Layout"
-msgstr "Diseño de columnas"
+msgstr ""
 
 #: build/button/index.js:1
 msgid "Reverse"
-msgstr "Invertir"
+msgstr ""
 
 #: build/button/index.js:1
 msgid "Enable icon"
-msgstr "Activar icono"
+msgstr ""
 
 #: build/button/index.js:1
 msgid "Icon"
-msgstr "Icono"
+msgstr ""
 
 #: build/query/index.js:1
 msgid "Query"
-msgstr "Consulta"
+msgstr ""
 
 #: build/query/index.js:1
 msgid "Use default query"
-msgstr "Usar consulta por defecto"
+msgstr ""
 
 #: build/query/index.js:1
 msgid "Show items found message"
-msgstr "Mostrar mensaje de elementos encontrados"
+msgstr ""
 
 #: build/query/index.js:1
 msgid "For related Posts"
-msgstr "Para entradas relacionadas"
+msgstr ""
 
 #: build/query/index.js:1
 msgid "N.b. works in single posts"
-msgstr "Nota: funciona en entradas individuales"
+msgstr ""
 
 #: build/query/index.js:1
 #: build/slider/index.js:1
 msgid "Post Type"
-msgstr "Tipo de contenido"
+msgstr ""
 
 #: build/query/index.js:1
 #: build/slider/index.js:1
 msgid "eg: post, page, product"
-msgstr "ej: post, page, product"
+msgstr ""
 
 #: build/query/index.js:1
 #: build/slider/index.js:1
 msgid "Category SLug"
-msgstr "Slug de categoría"
+msgstr ""
 
 #: build/query/index.js:1
 #: build/slider/index.js:1
 msgid "Taxonomy"
-msgstr "Taxonomía"
+msgstr ""
 
 #: build/query/index.js:1
 #: build/slider/index.js:1
 msgid "Number of posts"
-msgstr "Número de entradas"
+msgstr ""
 
 #: build/query/index.js:1
 #: build/slider/index.js:1
 msgid "Thumbnail Size"
-msgstr "Tamaño de miniatura"
+msgstr ""
 
 #: build/query/index.js:1
 msgid "Show Author Name"
-msgstr "Mostrar nombre del autor"
+msgstr ""
 
 #: build/query/index.js:1
 msgid "Show Date"
-msgstr "Mostrar fecha"
+msgstr ""
 
 #: build/query/index.js:1
 msgid "Show Excerpt"
-msgstr "Mostrar extracto"
+msgstr ""
 
 #: build/query/index.js:1
 msgid "Excerpt length"
-msgstr "Longitud del extracto"
+msgstr ""
 
 #: build/query/index.js:1
 msgid "Number of characters for excerpt."
-msgstr "Número de caracteres para el extracto."
+msgstr ""
 
 #: build/query/index.js:1
 msgid "Use pagination"
-msgstr "Usar paginación"
+msgstr ""
 
 #: build/query/index.js:1
 msgid "Use search"
-msgstr "Usar búsqueda"
+msgstr ""
 
 #: build/query/index.js:1
 msgid "N.B. this is just an example, not the actual preview"
-msgstr "Nota: esto es solo un ejemplo, no la vista previa real"
+msgstr ""
 
 #: build/query/index.js:1
 msgid "Found 33 items"
-msgstr "Se encontraron 33 elementos"
+msgstr ""
 
 #: build/searchbox/index.js:1
 msgid "Show icon"
-msgstr "Mostrar icono"
+msgstr ""
 
 #: build/searchbox/index.js:1
 msgid "Search Label"
-msgstr "Etiqueta de búsqueda"
+msgstr ""
 
 #: build/searchbox/index.js:1
 msgid "Placeholder"
-msgstr "Texto de relleno"
+msgstr ""
 
 #: build/sidepanel/index.js:1
 msgid "Triggers class name"
-msgstr "Nombre de clase de los disparadores"
+msgstr ""
 
 #: build/sidepanel/index.js:1
 msgid "Add 'action-close' class to trigger to close the panel"
-msgstr "Añadir clase 'action-close' al disparador para cerrar el panel"
+msgstr ""
 
 #: build/sidepanel/index.js:1
 msgid "Start"
-msgstr "Inicio"
+msgstr ""
 
 #: build/sidepanel/index.js:1
 msgid "End"
-msgstr "Fin"
+msgstr ""
 
 #: build/sidepanel/index.js:1
 msgid "Top"
-msgstr "Arriba"
+msgstr ""
 
 #: build/sidepanel/index.js:1
 msgid "Bottom"
-msgstr "Abajo"
+msgstr ""
 
 #: build/slider/index.js:1
 msgid "Thumbnail will appear Here"
-msgstr "La miniatura aparecerá aquí"
+msgstr ""
 
 #: build/slider/index.js:1
 msgid "Caption will be shown here..."
-msgstr "La leyenda se mostrará aquí..."
+msgstr ""
 
 #: build/slider/index.js:1
 msgid "Posts Settings"
-msgstr "Ajustes de entradas"
+msgstr ""
 
 #: build/slider/index.js:1
 msgid "Taxonomy term slug"
-msgstr "Slug del término de taxonomía"
+msgstr ""
 
 #: build/slider/index.js:1
 msgid "eg: category, post_tag, product_cat, product_tag"
-msgstr "ej: category, post_tag, product_cat, product_tag"
+msgstr ""
 
 #: build/slider/index.js:1
 msgid "Show Caption"
-msgstr "Mostrar leyenda"
+msgstr ""
 
 #: build/slider/index.js:1
 msgid "Navigation Buttons"
-msgstr "Botones de navegación"
+msgstr ""
 
 #: build/slider/index.js:1
 msgid "Navigation Dots"
-msgstr "Puntos de navegación"
+msgstr ""
 
 #: build/slider/index.js:1
 msgid "Autoplay"
-msgstr "Reproducción automática"
+msgstr ""
 
 #: build/slider/index.js:1
 msgid "Interval"
-msgstr "Intervalo"
+msgstr ""
 
 #: build/slider/index.js:1
 msgid "Only if autoplay is enabled"
-msgstr "Solo si la reproducción automática está activada"
+msgstr ""
 
 #: build/theme-controllers/index.js:1
 msgid "Light Icon"
-msgstr "Icono modo claro"
+msgstr ""
 
 #: build/theme-controllers/index.js:1
 msgid "Dark Icon"
-msgstr "Icono modo oscuro"
+msgstr ""
 
 #: build/theme-controllers/index.js:1
 msgid "System Icon"
-msgstr "Icono de sistema"
+msgstr ""
 
 #: build/button/block.json
 msgctxt "block title"
 msgid "Button"
-msgstr "Botón"
+msgstr ""
 
 #: build/button/block.json
 msgctxt "block description"
 msgid "Display button or link with integrated SVG icon support."
-msgstr "Muestra un botón o enlace con soporte integrado para iconos SVG."
+msgstr ""
 
 #: build/query/block.json
 msgctxt "block title"
 msgid "Query Posts"
-msgstr "Consulta de entradas"
+msgstr ""
 
 #: build/query/block.json
 msgctxt "block description"
 msgid "Custom query to display posts filtered by category and post type."
-msgstr "Consulta personalizada para mostrar entradas filtradas por categoría y tipo de contenido."
+msgstr ""
 
 #: build/searchbox/block.json
 msgctxt "block title"
 msgid "Search Box"
-msgstr "Caja de búsqueda"
+msgstr ""
 
 #: build/searchbox/block.json
 msgctxt "block description"
 msgid "Search posts filtered specifically by the active post type."
-msgstr "Busca entradas filtradas específicamente por el tipo de contenido activo."
+msgstr ""
 
 #: build/sidepanel/block.json
 msgctxt "block title"
 msgid "Side Panel"
-msgstr "Panel lateral"
+msgstr ""
 
 #: build/sidepanel/block.json
 msgctxt "block description"
 msgid "Slide-out drawer for any side of the screen, triggered by a button you choose."
-msgstr "Cajón deslizante para cualquier lado de la pantalla, activado por el botón que elijas."
+msgstr ""
 
 #: build/slider/block.json
 msgctxt "block title"
 msgid "Slider"
-msgstr "Carrusel"
+msgstr ""
 
 #: build/slider/block.json
 msgctxt "block description"
 msgid "Display your latest posts in a responsive, single-slide carousel."
-msgstr "Muestra tus últimas entradas en un carrousel adaptativo de una sola diapositiva."
+msgstr ""
 
 #: build/theme-controllers/block.json
 msgctxt "block title"
 msgid "Theme Controllers"
-msgstr "Controladores de tema"
+msgstr ""
 
 #: build/theme-controllers/block.json
 msgctxt "block description"
 msgid "Let user choose between light and dark modes anytime."
-msgstr "Permite al usuario elegir entre los modos claro y oscuro en cualquier momento."
+msgstr ""

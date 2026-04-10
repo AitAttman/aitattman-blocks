@@ -1,7 +1,7 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "aitattman/button",
+	"name": "aitattman-blocks/button",
 	"version": "0.1.0",
 	"title": "Button",
 	"category": "widgets",
@@ -62,7 +62,7 @@
 			"width": true
 		}
 	},
-	"textdomain": "ait-blocks",
+	"textdomain": "aitattman-blocks",
 	"style": "file:./style-index.css",
 	"editorScript": "file:./index.js"
 }

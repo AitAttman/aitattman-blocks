@@ -1,6 +1,6 @@
 {
-	"name": "ait-blocks",
-	"version": "1.1.0",
+	"name": "aitattman-blocks",
+	"version": "1.2.0",
 	"description": "Enable wordpress custom blocks like Side-panel, Search Box, Query, Button, Slider",
 	"author": "Ahmed Ait Attman <aitattman@outlook.com> (https://aitattman.pages.dev)",
 	"license": "GPL-2.0-or-later",
@@ -13,11 +13,11 @@
 		"packages-update": "wp-scripts packages-update",
 		"plugin-zip": "wp-scripts plugin-zip",
 		"start": "wp-scripts start",
-		"make-pot": "wp i18n make-pot ./ languages/ait-blocks.pot --exclude=node_modules,src",
+		"make-pot": "wp i18n make-pot ./ languages/aitattman-blocks.pot --exclude=node_modules,src",
 		"make-mo": "wp i18n make-mo languages/",
 		"make-json": "wp i18n make-json languages/ --no-purge",
-		"zip-plugin": "mkdir -p ait-blocks && cp -r build languages ait-blocks.php README.md LICENSE.txt ait-blocks/ && zip -r plugin.zip . -i 'ait-blocks/*' -m",
-		"zip-for-wp": "mkdir -p ait-blocks && cp -r ait-blocks.php build readme.txt LICENSE.txt assets ait-blocks/ && zip -r wp-ait-blocks.zip . -i 'ait-blocks/*' -m"
+		"zip-plugin": "mkdir -p aitattman-blocks && cp -r build languages aitattman-blocks.php README.md LICENSE.txt aitattman-blocks/ && zip -r plugin.zip . -i 'aitattman-blocks/*' -m",
+		"zip-for-wp": "mkdir -p aitattman-blocks && cp -r aitattman-blocks.php build readme.wp.txt LICENSE.txt aitattman-blocks/ && zip -r wp-aitattman-blocks.zip . -i 'aitattman-blocks/*' -m"
 	},
 	"dependencies": {
 		"@wordpress/block-editor": "latest",

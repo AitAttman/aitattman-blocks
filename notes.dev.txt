@@ -1,4 +1,4 @@
-If the plugin is installed from github, the plugin file (ait-blocks.php) header must
+If the plugin is installed from github, the plugin file (aitattman-blocks.php) header must
 contain this line, otherwise translations won't work:
 Domain Path:       /languages
 

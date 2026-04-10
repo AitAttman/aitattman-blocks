@@ -1,7 +1,7 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "aitattman/theme-controllers",
+	"name": "aitattman-blocks/theme-controllers",
 	"version": "0.1.0",
 	"title": "Theme Controllers",
 	"category": "widgets",
@@ -33,7 +33,7 @@
 			"padding": true
 		}
 	},
-	"textdomain": "ait-blocks",
+	"textdomain": "aitattman-blocks",
 	"style": "file:./style-index.css",
 	"editorScript": "file:./index.js",
 	"viewScript": "file:./view.js"

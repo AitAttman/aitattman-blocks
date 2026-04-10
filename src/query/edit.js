@@ -76,9 +76,9 @@ export default function Edit({ attributes, setAttributes }) {
 	return (
 		<>
 			<InspectorControls>
-				<PanelBody title={__("Query", "ait-blocks")}>
+				<PanelBody title={__("Query", "aitattman-blocks")}>
 					<ToggleControl
-						label={__("Use default query", "ait-blocks")}
+						label={__("Use default query", "aitattman-blocks")}
 						checked={attributes.defaultQuery ?? true}
 						onChange={() =>
 							setAttributes((p) => ({
@@ -88,7 +88,7 @@ export default function Edit({ attributes, setAttributes }) {
 						}
 					/>
 					<ToggleControl
-						label={__("Show items found message", "ait-blocks")}
+						label={__("Show items found message", "aitattman-blocks")}
 						checked={attributes.showItemsFoundMessage ?? true}
 						onChange={() =>
 							setAttributes((p) => ({
@@ -100,7 +100,7 @@ export default function Edit({ attributes, setAttributes }) {
 					{!attributes.defaultQuery && (
 						<>
 							<ToggleControl
-								label={__("For related Posts", "ait-blocks")}
+								label={__("For related Posts", "aitattman-blocks")}
 								checked={attributes.isRelatedPosts ?? false}
 								onChange={() =>
 									setAttributes((p) => ({
@@ -108,20 +108,20 @@ export default function Edit({ attributes, setAttributes }) {
 										isRelatedPosts: !attributes.isRelatedPosts,
 									}))
 								}
-								help={__("N.b. works in single posts", "ait-blocks")}
+								help={__("N.b. works in single posts", "aitattman-blocks")}
 							/>
 							{!attributes.isRelatedPosts && (
 								<>
 									<TextControl
-										label={__("Post Type", "ait-blocks")}
+										label={__("Post Type", "aitattman-blocks")}
 										value={attributes.postType ?? ""}
 										onChange={(value) =>
 											setAttributes((p) => ({ ...p, postType: value }))
 										}
-										help={__("eg: post, page, product", "ait-blocks")}
+										help={__("eg: post, page, product", "aitattman-blocks")}
 									/>
 									<TextControl
-										label={__("Category SLug", "ait-blocks")}
+										label={__("Category SLug", "aitattman-blocks")}
 										value={attributes.category ?? ""}
 										onChange={(value) =>
 											setAttributes((p) => ({
@@ -133,7 +133,7 @@ export default function Edit({ attributes, setAttributes }) {
 								</>
 							)}
 							<TextControl
-								label={__("Taxonomy", "ait-blocks")}
+								label={__("Taxonomy", "aitattman-blocks")}
 								value={attributes.taxonomy ?? ""}
 								onChange={(value) =>
 									setAttributes((p) => ({
@@ -143,7 +143,7 @@ export default function Edit({ attributes, setAttributes }) {
 								}
 							/>
 							<TextControl
-								label={__("Number of posts", "ait-blocks")}
+								label={__("Number of posts", "aitattman-blocks")}
 								value={attributes.numPosts ?? 5}
 								type="number"
 								onChange={(value) =>
@@ -156,7 +156,7 @@ export default function Edit({ attributes, setAttributes }) {
 						</>
 					)}
 					<TextControl
-						label={__("Thumbnail Size", "ait-blocks")}
+						label={__("Thumbnail Size", "aitattman-blocks")}
 						value={attributes.thumbnailSize ?? ""}
 						onChange={(value) =>
 							setAttributes((p) => ({ ...p, thumbnailSize: value }))
@@ -166,7 +166,7 @@ export default function Edit({ attributes, setAttributes }) {
 				</PanelBody>
 				<PanelBody title={__("Appearance", "Ait Attman")}>
 					<ToggleControl
-						label={__("Show Author Name", "ait-blocks")}
+						label={__("Show Author Name", "aitattman-blocks")}
 						checked={attributes.showAuthorName ?? true}
 						onChange={() =>
 							setAttributes((p) => ({
@@ -176,7 +176,7 @@ export default function Edit({ attributes, setAttributes }) {
 						}
 					/>
 					<ToggleControl
-						label={__("Show Date", "ait-blocks")}
+						label={__("Show Date", "aitattman-blocks")}
 						checked={attributes.showDate ?? true}
 						onChange={() =>
 							setAttributes((p) => ({
@@ -186,7 +186,7 @@ export default function Edit({ attributes, setAttributes }) {
 						}
 					/>
 					<ToggleControl
-						label={__("Show Excerpt", "ait-blocks")}
+						label={__("Show Excerpt", "aitattman-blocks")}
 						checked={attributes.showExcerpt ?? false}
 						onChange={() =>
 							setAttributes((p) => ({
@@ -197,7 +197,7 @@ export default function Edit({ attributes, setAttributes }) {
 					/>
 					{attributes.showExcerpt && (
 						<RangeControl
-							label={__("Excerpt length", "ait-blocks")}
+							label={__("Excerpt length", "aitattman-blocks")}
 							min={50}
 							max={250}
 							step={5}
@@ -205,11 +205,11 @@ export default function Edit({ attributes, setAttributes }) {
 							onChange={(v) =>
 								setAttributes((p) => ({ ...p, excerptLength: v }))
 							}
-							help={__("Number of characters for excerpt.", "ait-blocks")}
+							help={__("Number of characters for excerpt.", "aitattman-blocks")}
 						/>
 					)}
 					<ToggleControl
-						label={__("Use pagination", "ait-blocks")}
+						label={__("Use pagination", "aitattman-blocks")}
 						checked={attributes.usePagination ?? true}
 						onChange={() =>
 							setAttributes((p) => ({
@@ -219,7 +219,7 @@ export default function Edit({ attributes, setAttributes }) {
 						}
 					/>
 					<ToggleControl
-						label={__("Use search", "ait-blocks")}
+						label={__("Use search", "aitattman-blocks")}
 						checked={attributes.useSearch ?? true}
 						onChange={() =>
 							setAttributes((p) => ({
@@ -235,13 +235,13 @@ export default function Edit({ attributes, setAttributes }) {
 					<i>
 						{__(
 							"N.B. this is just an example, not the actual preview",
-							"ait-blocks",
+							"aitattman-blocks",
 						)}
 					</i>
 				</p>
 				{attributes.showItemsFoundMessage && (
 					<p className="rp-items-found-message">
-						{__("Found 33 items", "ait-blocks")}
+						{__("Found 33 items", "aitattman-blocks")}
 					</p>
 				)}
 				<div className="ait-query">

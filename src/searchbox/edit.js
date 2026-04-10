@@ -16,23 +16,23 @@ export default function Edit({ attributes, setAttributes }) {
 	return (
 		<>
 			<InspectorControls>
-				<PanelBody title={__("Settings", "ait-blocks")}>
+				<PanelBody title={__("Settings", "aitattman-blocks")}>
 					<ToggleControl
-						label={__("Show icon", "ait-blocks")}
+						label={__("Show icon", "aitattman-blocks")}
 						checked={showIcon}
 						onChange={() =>
 							setAttributes((p) => ({ ...p, showIcon: !showIcon }))
 						}
 					/>
 					<TextControl
-						label={__("Search Label", "ait-blocks")}
+						label={__("Search Label", "aitattman-blocks")}
 						value={searchLabel ?? ""}
 						onChange={(value) =>
 							setAttributes((p) => ({ ...p, searchLabel: value }))
 						}
 					/>
 					<TextControl
-						label={__("Placeholder", "ait-blocks")}
+						label={__("Placeholder", "aitattman-blocks")}
 						value={placeholder ?? ""}
 						onChange={(value) =>
 							setAttributes((p) => ({ ...p, placeholder: value }))
@@ -44,11 +44,11 @@ export default function Edit({ attributes, setAttributes }) {
 				<div className="container">
 					<input
 						name={inputName || "s"}
-						placeholder={placeholder || __("search...", "ait-blocks")}
+						placeholder={placeholder || __("search...", "aitattman-blocks")}
 					/>
 					<button>
 						{showIcon && <SearchIcon />}
-						{!showIcon && <>{searchLabel || __("Search", "ait-blocks")}</>}
+						{!showIcon && <>{searchLabel || __("Search", "aitattman-blocks")}</>}
 					</button>
 				</div>
 			</div>

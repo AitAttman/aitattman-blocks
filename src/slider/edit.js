@@ -49,12 +49,12 @@ export default function Edit({ attributes, setAttributes }) {
 					}}
 				>
 					<p className="caption">
-						{__("Thumbnail will appear Here", "ait-blocks")}
+						{__("Thumbnail will appear Here", "aitattman-blocks")}
 					</p>
 				</div>
 				{attributes.caption && (
 					<p className="caption">
-						{__("Caption will be shown here...", "ait-blocks")}
+						{__("Caption will be shown here...", "aitattman-blocks")}
 					</p>
 				)}
 			</div>
@@ -83,17 +83,17 @@ export default function Edit({ attributes, setAttributes }) {
 	return (
 		<>
 			<InspectorControls>
-				<PanelBody title={__("Posts Settings", "ait-blocks")}>
+				<PanelBody title={__("Posts Settings", "aitattman-blocks")}>
 					<TextControl
-						label={__("Post Type", "ait-blocks")}
+						label={__("Post Type", "aitattman-blocks")}
 						value={attributes.postType ?? ""}
 						onChange={(value) =>
 							setAttributes((p) => ({ ...p, postType: value }))
 						}
-						help={__("eg: post, page, product", "ait-blocks")}
+						help={__("eg: post, page, product", "aitattman-blocks")}
 					/>
 					<TextControl
-						label={__("Category SLug", "ait-blocks")}
+						label={__("Category SLug", "aitattman-blocks")}
 						value={attributes.category ?? ""}
 						onChange={(value) =>
 							setAttributes((p) => ({
@@ -101,10 +101,10 @@ export default function Edit({ attributes, setAttributes }) {
 								category: value.replace(/\s+/, ""),
 							}))
 						}
-						help={__("Taxonomy term slug", "ait-blocks")}
+						help={__("Taxonomy term slug", "aitattman-blocks")}
 					/>
 					<TextControl
-						label={__("Taxonomy", "ait-blocks")}
+						label={__("Taxonomy", "aitattman-blocks")}
 						value={attributes.taxonomy ?? ""}
 						onChange={(value) =>
 							setAttributes((p) => ({
@@ -114,11 +114,11 @@ export default function Edit({ attributes, setAttributes }) {
 						}
 						help={__(
 							"eg: category, post_tag, product_cat, product_tag",
-							"ait-blocks",
+							"aitattman-blocks",
 						)}
 					/>
 					<TextControl
-						label={__("Thumbnail Size", "ait-blocks")}
+						label={__("Thumbnail Size", "aitattman-blocks")}
 						value={attributes.thumbnailSize ?? ""}
 						onChange={(value) =>
 							setAttributes((p) => ({ ...p, thumbnailSize: value }))
@@ -126,7 +126,7 @@ export default function Edit({ attributes, setAttributes }) {
 						help="eg: thumbnail, medium, medium_large, large, full"
 					/>
 					<TextControl
-						label={__("Number of posts", "ait-blocks")}
+						label={__("Number of posts", "aitattman-blocks")}
 						value={attributes.numPosts ?? 5}
 						type="number"
 						onChange={(value) =>
@@ -137,7 +137,7 @@ export default function Edit({ attributes, setAttributes }) {
 						}
 					/>
 					<ToggleControl
-						label={__("Show Caption", "ait-blocks")}
+						label={__("Show Caption", "aitattman-blocks")}
 						checked={attributes.caption ?? true}
 						onChange={() =>
 							setAttributes((p) => ({
@@ -149,7 +149,7 @@ export default function Edit({ attributes, setAttributes }) {
 				</PanelBody>
 				<PanelBody title={__("Slider Settings", "Ait Attman")}>
 					<ToggleControl
-						label={__("Navigation Buttons", "ait-blocks")}
+						label={__("Navigation Buttons", "aitattman-blocks")}
 						checked={attributes.navButtons ?? true}
 						onChange={() =>
 							setAttributes((p) => ({
@@ -159,22 +159,22 @@ export default function Edit({ attributes, setAttributes }) {
 						}
 					/>
 					<ToggleControl
-						label={__("Navigation Dots", "ait-blocks")}
+						label={__("Navigation Dots", "aitattman-blocks")}
 						checked={attributes.navDots ?? true}
 						onChange={() =>
 							setAttributes((p) => ({ ...p, navDots: !attributes.navDots }))
 						}
 					/>
 					<ToggleControl
-						label={__("Autoplay", "ait-blocks")}
+						label={__("Autoplay", "aitattman-blocks")}
 						checked={attributes.autoplay ?? false}
 						onChange={() =>
 							setAttributes((p) => ({ ...p, autoplay: !attributes.autoplay }))
 						}
 					/>
 					<TextControl
-						label={__("Interval", "ait-blocks")}
-						help={__("Only if autoplay is enabled", "ait-blocks")}
+						label={__("Interval", "aitattman-blocks")}
+						help={__("Only if autoplay is enabled", "aitattman-blocks")}
 						value={attributes.interval ?? ""}
 						type="number"
 						onChange={(value) =>

@@ -45,10 +45,10 @@ export default function Edit({ attributes, setAttributes, isSelected }) {
 	const richTextRef = useRef();
 	const [extraClasses, setExtraClasses] = useState([]);
 	const tags = [
-		{ value: "button", label: __("Button", "ait-blocks") },
-		{ value: "a", label: __("Link", "ait-blocks") },
-		{ value: "span", label: __("Span", "ait-blocks") },
-		{ value: "div", label: __("Div", "ait-blocks") },
+		{ value: "button", label: __("Button", "aitattman-blocks") },
+		{ value: "a", label: __("Link", "aitattman-blocks") },
+		{ value: "span", label: __("Span", "aitattman-blocks") },
+		{ value: "div", label: __("Div", "aitattman-blocks") },
 	];
 	// Focus the RichText when the whole block becomes selected
 	useEffect(() => {
@@ -71,37 +71,37 @@ export default function Edit({ attributes, setAttributes, isSelected }) {
 	return (
 		<>
 			<InspectorControls>
-				<PanelBody title={__("Settings", "ait-blocks")}>
+				<PanelBody title={__("Settings", "aitattman-blocks")}>
 					<SelectControl
-						label={__("Tag type", "ait-blocks")}
+						label={__("Tag type", "aitattman-blocks")}
 						value={attributes.tag ?? "button"}
 						onChange={(v) => setAttributes((p) => ({ ...p, tag: v }))}
 						options={tags}
 					/>
 					{attributes.tag === "a" && (
 						<TextControl
-							label={__("Url", "ait-blocks")}
+							label={__("Url", "aitattman-blocks")}
 							placeholder="url value"
 							value={attributes.url ?? ""}
 							onChange={(v) => setAttributes((p) => ({ ...p, url: v }))}
 						/>
 					)}
 					<ToggleControl
-						label={__("Column Layout", "ait-blocks")}
+						label={__("Column Layout", "aitattman-blocks")}
 						checked={attributes.isColumn ?? false}
 						onChange={() =>
 							setAttributes((p) => ({ ...p, isColumn: !attributes.isColumn }))
 						}
 					/>
 					<ToggleControl
-						label={__("Reverse", "ait-blocks")}
+						label={__("Reverse", "aitattman-blocks")}
 						checked={attributes.isReverse ?? false}
 						onChange={() =>
 							setAttributes((p) => ({ ...p, isReverse: !attributes.isReverse }))
 						}
 					/>
 					<ToggleControl
-						label={__("Enable icon", "ait-blocks")}
+						label={__("Enable icon", "aitattman-blocks")}
 						checked={attributes.hasIcon}
 						onChange={() =>
 							setAttributes((p) => ({ ...p, hasIcon: !attributes.hasIcon }))
@@ -109,7 +109,7 @@ export default function Edit({ attributes, setAttributes, isSelected }) {
 					/>
 					{attributes.hasIcon && (
 						<TextareaControl
-							label={__("Icon", "ait-blocks")}
+							label={__("Icon", "aitattman-blocks")}
 							value={attributes.icon ?? ""}
 							onChange={(v) => setAttributes((p) => ({ ...p, icon: v }))}
 						/>

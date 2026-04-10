@@ -35,19 +35,19 @@ export default function Edit({ attributes, setAttributes, isSelected }) {
 	return (
 		<>
 			<InspectorControls>
-				<PanelBody title={__("Settings", "ait-blocks")}>
+				<PanelBody title={__("Settings", "aitattman-blocks")}>
 					<TextareaControl
-						label={__("Light Icon", "ait-blocks")}
+						label={__("Light Icon", "aitattman-blocks")}
 						value={attributes.iconLight ?? ""}
 						onChange={(v) => setAttributes((p) => ({ ...p, iconLight: v }))}
 					/>
 					<TextareaControl
-						label={__("Dark Icon", "ait-blocks")}
+						label={__("Dark Icon", "aitattman-blocks")}
 						value={attributes.iconDark ?? ""}
 						onChange={(v) => setAttributes((p) => ({ ...p, iconDark: v }))}
 					/>
 					<TextareaControl
-						label={__("System Icon", "ait-blocks")}
+						label={__("System Icon", "aitattman-blocks")}
 						value={attributes.iconSystem ?? ""}
 						onChange={(v) => setAttributes((p) => ({ ...p, iconSystem: v }))}
 					/>

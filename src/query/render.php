@@ -1,5 +1,5 @@
 <?php
-if (! defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
 	/**
 	 * Exit if accessed directly.
 	 */
@@ -88,7 +88,7 @@ $getPageUrl = function ($pageNum) {
 };
 if ($attributes['showItemsFoundMessage']) {
 	/* translators: %d: number of posts found */
-	$message = sprintf(esc_html__('Found %d items', 'ait-blocks'), $postsCount);
+	$message = sprintf(esc_html__('Found %d items', "aitattman-blocks"), $postsCount);
 	echo '<p class="rp-items-found-message">' . str_replace($postsCount, '<b>' . $postsCount . '</b>', $message) . '</p>';
 }
 ?>
@@ -108,7 +108,7 @@ if ($attributes['showItemsFoundMessage']) {
 			} else {
 				$author_name = '';
 			}
-		?>
+			?>
 			<?php do_action('ait_blocks_query_before_post_content', $attributes['anchor'] ?? ''); ?>
 			<div class="post-content">
 				<?php if ($thumbnail_url): ?>
@@ -123,11 +123,13 @@ if ($attributes['showItemsFoundMessage']) {
 					<?php if (!empty($author_name)): ?>
 						<div class="author"><span><?php echo esc_html($author_name); ?></span></div>
 					<?php endif; ?>
-					<?php if (!empty($attributes['showDate'])) : ?>
+					<?php if (!empty($attributes['showDate'])): ?>
 						<div class="post-date"><span><?php echo esc_html(get_the_date('M j, Y')); ?></span></div>
 					<?php endif; ?>
-					<?php if (!empty($attributes['showExcerpt']) && $excerpt = get_the_excerpt()) : ?>
-						<div class="post-snippet"><span><?php echo esc_html(mb_substr($excerpt, 0, $attributes['excerptLength'] ?? 100, 'UTF-8')); ?></span></div>
+					<?php if (!empty($attributes['showExcerpt']) && $excerpt = get_the_excerpt()): ?>
+						<div class="post-snippet">
+							<span><?php echo esc_html(mb_substr($excerpt, 0, $attributes['excerptLength'] ?? 100, 'UTF-8')); ?></span>
+						</div>
 					<?php endif; ?>
 				</div>
 			</div>
@@ -136,12 +138,12 @@ if ($attributes['showItemsFoundMessage']) {
 		// important – restore global $post
 		wp_reset_postdata();
 		if (!empty($attributes['usePagination'])):
-		?>
+			?>
 			<div class="pagination">
 				<ul>
 					<?php
 					if ($currentPage > 4) {
-						echo "<li><a class='first' href='" . esc_attr($getPageUrl(1)) . "'>" . esc_html__('First', 'ait-blocks') . "</a></li>";
+						echo "<li><a class='first' href='" . esc_attr($getPageUrl(1)) . "'>" . esc_html__('First', "aitattman-blocks") . "</a></li>";
 					}
 					for ($i = max(1, $currentPage - 3); $i < $currentPage; $i++) {
 						echo "<li><a href='" . esc_attr($getPageUrl($i)) . "'>" . esc_html($i) . "</a></li>";
@@ -153,7 +155,7 @@ if ($attributes['showItemsFoundMessage']) {
 						echo "<li><a href='" . esc_attr($getPageUrl($i)) . "'>" . esc_html($i) . "</a></li>";
 					}
 					if ($currentPage < $totalPages - 3) {
-						echo "<li><a class='last' href='" . esc_attr($getPageUrl($totalPages)) . "'>" . esc_html__('Last', 'ait-blocks') . "</a></li>";
+						echo "<li><a class='last' href='" . esc_attr($getPageUrl($totalPages)) . "'>" . esc_html__('Last', "aitattman-blocks") . "</a></li>";
 					}
 					?>
 				</ul>

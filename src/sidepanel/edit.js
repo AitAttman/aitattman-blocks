@@ -40,35 +40,35 @@ export default function Edit({ attributes, setAttributes }) {
 			<InspectorControls>
 				<PanelBody>
 					<TextControl
-						label={__("Triggers class name", "ait-blocks")}
+						label={__("Triggers class name", "aitattman-blocks")}
 						value={attributes.triggers ?? ""}
 						onChange={(value) =>
 							setAttributes((p) => ({ ...p, triggers: value }))
 						}
 						help={__(
 							"Add 'action-close' class to trigger to close the panel",
-							"ait-blocks",
+							"aitattman-blocks",
 						)}
 					/>
 				</PanelBody>
 				<PanelBody title={__("Panel Position", "Ait Attman")}>
 					<ToggleControl
-						label={__("Start", "ait-blocks")}
+						label={__("Start", "aitattman-blocks")}
 						checked={attributes.position === "start"}
 						onChange={() => setAttributes((p) => ({ ...p, position: "start" }))}
 					/>
 					<ToggleControl
-						label={__("End", "ait-blocks")}
+						label={__("End", "aitattman-blocks")}
 						checked={attributes.position === "end"}
 						onChange={() => setAttributes((p) => ({ ...p, position: "end" }))}
 					/>
 					<ToggleControl
-						label={__("Top", "ait-blocks")}
+						label={__("Top", "aitattman-blocks")}
 						checked={attributes.position === "top"}
 						onChange={() => setAttributes((p) => ({ ...p, position: "top" }))}
 					/>
 					<ToggleControl
-						label={__("Bottom", "ait-blocks")}
+						label={__("Bottom", "aitattman-blocks")}
 						checked={attributes.position === "bottom"}
 						onChange={() =>
 							setAttributes((p) => ({ ...p, position: "bottom" }))

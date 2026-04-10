@@ -1,43 +1,43 @@
-# Copyright (C) 2026 Ait Blocks
+# Copyright (C) 2026 AitAttman Blocks for Gutenberg Editor
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Ait Blocks 1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ait-blocks\n"
+"Project-Id-Version: AitAttman Blocks 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/aitattman-blocks\n"
 "Last-Translator: Ahmed Ait Attman <aitattman@outlook.com>\n"
-"Language: ar\n"
-"Language-Team: Arabic <ar@li.org>\n"
+"Language: fr_FR\n"
+"Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2026-03-27T08:36:40+00:00\n"
 "PO-Revision-Date: 2026-03-27T08:36:40+00:00\n"
 "X-Generator: WP-CLI 2.12.0\n"
-"X-Domain: ait-blocks\n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Domain: aitattman-blocks\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. Plugin Name of the plugin
-#: ait-blocks.php
-msgid "Ait Blocks"
-msgstr "Ait Blocks"
+#: aitattman-blocks.php
+msgid "AitAttman Blocks"
+msgstr "AitAttman Blocks"
 
 #. Plugin URI of the plugin
-#: ait-blocks.php
-msgid "https://github.com/AitAttman/ait-blocks"
-msgstr "https://github.com/AitAttman/ait-blocks"
+#: aitattman-blocks.php
+msgid "https://github.com/AitAttman/aitattman-blocks"
+msgstr "https://github.com/AitAttman/aitattman-blocks"
 
 #. Description of the plugin
-#: ait-blocks.php
+#: aitattman-blocks.php
 msgid "Enable Wordpress custom blocks like Side-panel, Search Box, Query Posts, Button, Slider and Theme Controllers"
-msgstr "تفعيل قوالب ووردبريس مخصصة مثل اللوحة الجانبية، صندوق البحث، استعلام المقالات، الأزرار، السلايدر، ومتحكمات المظهر."
+msgstr "Activez des blocs personnalisés WordPress tels que le Panneau latéral, la Boîte de recherche, la Requête d'articles, le Bouton, le Curseur et les Contrôleurs de thème."
 
 #. Author of the plugin
-#: ait-blocks.php
+#: aitattman-blocks.php
 msgid "Ahmed Ait Attman <aitattman@outlook.com>"
 msgstr "Ahmed Ait Attman <aitattman@outlook.com>"
 
 #. Author URI of the plugin
-#: ait-blocks.php
+#: aitattman-blocks.php
 msgid "https://aitattman.pages.dev"
 msgstr "https://aitattman.pages.dev"
 
@@ -45,33 +45,33 @@ msgstr "https://aitattman.pages.dev"
 #: build/query/render.php:91
 #, php-format
 msgid "Found %d items"
-msgstr "تم العثور على %d عناصر"
+msgstr "%d éléments trouvés"
 
 #: build/query/render.php:144
 msgid "First"
-msgstr "الأول"
+msgstr "Premier"
 
 #: build/query/render.php:156
 msgid "Last"
-msgstr "الأخير"
+msgstr "Dernier"
 
 #: build/searchbox/render.php:23
 #: build/searchbox/index.js:1
 msgid "search..."
-msgstr "بحث..."
+msgstr "recherche..."
 
 #: build/searchbox/render.php:41
 #: build/searchbox/index.js:1
 msgid "Search"
-msgstr "بحث"
+msgstr "Rechercher"
 
 #: build/button/index.js:1
 msgid "Button"
-msgstr "زر"
+msgstr "Bouton"
 
 #: build/button/index.js:1
 msgid "Link"
-msgstr "رابط"
+msgstr "Lien"
 
 #: build/button/index.js:1
 msgid "Span"
@@ -85,266 +85,266 @@ msgstr "Div"
 #: build/searchbox/index.js:1
 #: build/theme-controllers/index.js:1
 msgid "Settings"
-msgstr "الإعدادات"
+msgstr "Réglages"
 
 #: build/button/index.js:1
 msgid "Tag type"
-msgstr "نوع الوسم"
+msgstr "Type de balise"
 
 #: build/button/index.js:1
 msgid "Url"
-msgstr "رابط (URL)"
+msgstr "URL"
 
 #: build/button/index.js:1
 msgid "Column Layout"
-msgstr "تخطيط الأعمدة"
+msgstr "Mise en page en colonnes"
 
 #: build/button/index.js:1
 msgid "Reverse"
-msgstr "عكس"
+msgstr "Inverser"
 
 #: build/button/index.js:1
 msgid "Enable icon"
-msgstr "تفعيل الأيقونة"
+msgstr "Activer l'icône"
 
 #: build/button/index.js:1
 msgid "Icon"
-msgstr "أيقونة"
+msgstr "Icône"
 
 #: build/query/index.js:1
 msgid "Query"
-msgstr "استعلام"
+msgstr "Requête"
 
 #: build/query/index.js:1
 msgid "Use default query"
-msgstr "استخدام الاستعلام الافتراضي"
+msgstr "Utiliser la requête par défaut"
 
 #: build/query/index.js:1
 msgid "Show items found message"
-msgstr "إظهار رسالة عدد العناصر المكتشفة"
+msgstr "Afficher le message des éléments trouvés"
 
 #: build/query/index.js:1
 msgid "For related Posts"
-msgstr "للمقالات ذات الصلة"
+msgstr "Pour les articles similaires"
 
 #: build/query/index.js:1
 msgid "N.b. works in single posts"
-msgstr "ملاحظة: يعمل في المقالات الفردية"
+msgstr "N.B. fonctionne dans les articles uniques"
 
 #: build/query/index.js:1
 #: build/slider/index.js:1
 msgid "Post Type"
-msgstr "نوع المقال"
+msgstr "Type d'article"
 
 #: build/query/index.js:1
 #: build/slider/index.js:1
 msgid "eg: post, page, product"
-msgstr "مثال: post, page, product"
+msgstr "ex: post, page, product"
 
 #: build/query/index.js:1
 #: build/slider/index.js:1
 msgid "Category SLug"
-msgstr "الاسم اللطيف للتصنيف"
+msgstr "Slug de catégorie"
 
 #: build/query/index.js:1
 #: build/slider/index.js:1
 msgid "Taxonomy"
-msgstr "التصنيفات (Taxonomy)"
+msgstr "Taxonomie"
 
 #: build/query/index.js:1
 #: build/slider/index.js:1
 msgid "Number of posts"
-msgstr "عدد المقالات"
+msgstr "Nombre d'articles"
 
 #: build/query/index.js:1
 #: build/slider/index.js:1
 msgid "Thumbnail Size"
-msgstr "حجم الصورة البارزة"
+msgstr "Taille de la miniature"
 
 #: build/query/index.js:1
 msgid "Show Author Name"
-msgstr "إظهار اسم الكاتب"
+msgstr "Afficher le nom de l'auteur"
 
 #: build/query/index.js:1
 msgid "Show Date"
-msgstr "إظهار التاريخ"
+msgstr "Afficher la date"
 
 #: build/query/index.js:1
 msgid "Show Excerpt"
-msgstr "إظهار المقتطف"
+msgstr "Afficher l'extrait"
 
 #: build/query/index.js:1
 msgid "Excerpt length"
-msgstr "طول المقتطف"
+msgstr "Longueur de l'extrait"
 
 #: build/query/index.js:1
 msgid "Number of characters for excerpt."
-msgstr "عدد الحروف للمقتطف."
+msgstr "Nombre de caractères pour l'extrait."
 
 #: build/query/index.js:1
 msgid "Use pagination"
-msgstr "استخدام الترقيم"
+msgstr "Utiliser la pagination"
 
 #: build/query/index.js:1
 msgid "Use search"
-msgstr "استخدام البحث"
+msgstr "Utiliser la recherche"
 
 #: build/query/index.js:1
 msgid "N.B. this is just an example, not the actual preview"
-msgstr "ملاحظة: هذا مجرد مثال وليس المعاينة الفعلية"
+msgstr "N.B. ceci est juste un exemple, pas l'aperçu réel"
 
 #: build/query/index.js:1
 msgid "Found 33 items"
-msgstr "تم العثور على 33 عنصرًا"
+msgstr "33 éléments trouvés"
 
 #: build/searchbox/index.js:1
 msgid "Show icon"
-msgstr "إظهار الأيقونة"
+msgstr "Afficher l'icône"
 
 #: build/searchbox/index.js:1
 msgid "Search Label"
-msgstr "تسمية البحث"
+msgstr "Étiquette de recherche"
 
 #: build/searchbox/index.js:1
 msgid "Placeholder"
-msgstr "نص مؤقت"
+msgstr "Texte de remplacement"
 
 #: build/sidepanel/index.js:1
 msgid "Triggers class name"
-msgstr "اسم فئة (Class) المشغلات"
+msgstr "Nom de classe des déclencheurs"
 
 #: build/sidepanel/index.js:1
 msgid "Add 'action-close' class to trigger to close the panel"
-msgstr "أضف فئة 'action-close' للمشغل لإغلاق اللوحة"
+msgstr "Ajouter la classe 'action-close' au déclencheur pour fermer le panneau"
 
 #: build/sidepanel/index.js:1
 msgid "Start"
-msgstr "البداية"
+msgstr "Début"
 
 #: build/sidepanel/index.js:1
 msgid "End"
-msgstr "النهاية"
+msgstr "Fin"
 
 #: build/sidepanel/index.js:1
 msgid "Top"
-msgstr "الأعلى"
+msgstr "Haut"
 
 #: build/sidepanel/index.js:1
 msgid "Bottom"
-msgstr "الأسفل"
+msgstr "Bas"
 
 #: build/slider/index.js:1
 msgid "Thumbnail will appear Here"
-msgstr "ستظهر الصورة البارزة هنا"
+msgstr "La miniature apparaîtra ici"
 
 #: build/slider/index.js:1
 msgid "Caption will be shown here..."
-msgstr "سيظهر النص التوضيحي هنا..."
+msgstr "La légende s'affichera ici..."
 
 #: build/slider/index.js:1
 msgid "Posts Settings"
-msgstr "إعدادات المقالات"
+msgstr "Réglages des articles"
 
 #: build/slider/index.js:1
 msgid "Taxonomy term slug"
-msgstr "الاسم اللطيف للمصطلح"
+msgstr "Slug du terme de taxonomie"
 
 #: build/slider/index.js:1
 msgid "eg: category, post_tag, product_cat, product_tag"
-msgstr "مثال: category, post_tag, product_cat, product_tag"
+msgstr "ex: category, post_tag, product_cat, product_tag"
 
 #: build/slider/index.js:1
 msgid "Show Caption"
-msgstr "إظهار النص التوضيحي"
+msgstr "Afficher la légende"
 
 #: build/slider/index.js:1
 msgid "Navigation Buttons"
-msgstr "أزرار التنقل"
+msgstr "Boutons de navigation"
 
 #: build/slider/index.js:1
 msgid "Navigation Dots"
-msgstr "نقاط التنقل"
+msgstr "Points de navigation"
 
 #: build/slider/index.js:1
 msgid "Autoplay"
-msgstr "تشغيل تلقائي"
+msgstr "Lecture automatique"
 
 #: build/slider/index.js:1
 msgid "Interval"
-msgstr "المدة الزمنية"
+msgstr "Intervalle"
 
 #: build/slider/index.js:1
 msgid "Only if autoplay is enabled"
-msgstr "فقط إذا كان التشغيل التلقائي مفعلاً"
+msgstr "Seulement si la lecture automatique est activée"
 
 #: build/theme-controllers/index.js:1
 msgid "Light Icon"
-msgstr "أيقونة الوضع الفاتح"
+msgstr "Icône mode clair"
 
 #: build/theme-controllers/index.js:1
 msgid "Dark Icon"
-msgstr "أيقونة الوضع المظلم"
+msgstr "Icône mode sombre"
 
 #: build/theme-controllers/index.js:1
 msgid "System Icon"
-msgstr "أيقونة النظام"
+msgstr "Icône système"
 
 #: build/button/block.json
 msgctxt "block title"
 msgid "Button"
-msgstr "زر"
+msgstr "Bouton"
 
 #: build/button/block.json
 msgctxt "block description"
 msgid "Display button or link with integrated SVG icon support."
-msgstr "عرض زر أو رابط مع دعم متكامل لأيقونات SVG."
+msgstr "Affiche un bouton ou un lien avec prise en charge intégrée des icônes SVG."
 
 #: build/query/block.json
 msgctxt "block title"
 msgid "Query Posts"
-msgstr "استعلام المقالات"
+msgstr "Requête d'articles"
 
 #: build/query/block.json
 msgctxt "block description"
 msgid "Custom query to display posts filtered by category and post type."
-msgstr "استعلام مخصص لعرض المقالات المصفاة حسب التصنيف ونوع المقال."
+msgstr "Requête personnalisée pour afficher des articles filtrés par catégorie et type d'article."
 
 #: build/searchbox/block.json
 msgctxt "block title"
 msgid "Search Box"
-msgstr "صندوق البحث"
+msgstr "Boîte de recherche"
 
 #: build/searchbox/block.json
 msgctxt "block description"
 msgid "Search posts filtered specifically by the active post type."
-msgstr "البحث في المقالات المصفاة خصيصًا حسب نوع المقال النشط."
+msgstr "Rechercher des articles filtrés spécifiquement par le type d'article actif."
 
 #: build/sidepanel/block.json
 msgctxt "block title"
 msgid "Side Panel"
-msgstr "لوحة جانبية"
+msgstr "Panneau latéral"
 
 #: build/sidepanel/block.json
 msgctxt "block description"
 msgid "Slide-out drawer for any side of the screen, triggered by a button you choose."
-msgstr "درج منزلق لأي جانب من الشاشة، يتم تفعيله بواسطة زر تختاره."
+msgstr "Tiroir coulissant pour n'importe quel côté de l'écran, déclenché par un bouton de votre choix."
 
 #: build/slider/block.json
 msgctxt "block title"
 msgid "Slider"
-msgstr "سلايدر (متحرك)"
+msgstr "Curseur"
 
 #: build/slider/block.json
 msgctxt "block description"
 msgid "Display your latest posts in a responsive, single-slide carousel."
-msgstr "عرض أحدث مقالاتك في معرض صور (Carousel) متجاوب وبشريحة واحدة."
+msgstr "Affichez vos derniers articles dans un carrousel réactif à diapositive unique."
 
 #: build/theme-controllers/block.json
 msgctxt "block title"
 msgid "Theme Controllers"
-msgstr "متحكمات المظهر"
+msgstr "Contrôleurs de thème"
 
 #: build/theme-controllers/block.json
 msgctxt "block description"
 msgid "Let user choose between light and dark modes anytime."
-msgstr "السماح للمستخدم بالاختيار بين الوضع الفاتح والمظلم في أي وقت."
+msgstr "Permet à l'utilisateur de choisir entre les modes clair et sombre à tout moment."

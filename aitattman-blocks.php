@@ -1,23 +1,22 @@
 <?php
-
 /**
- * Plugin Name:       Ait Blocks
- * Description:       Enable Wordpress custom blocks like Side-panel, Search Box, Query Posts, Button, Slider and Theme Controllers
- * Version:           1.1.0
+ * Plugin Name:       AitAttman Blocks for Gutenberg Editor
+ * Description:       Enable WordPress custom blocks like Side-panel, Search Box, Query Posts, Button, Slider and Theme Controllers
+ * Version:           1.2.0
  * Requires at least: 6.4
  * Requires PHP:      8.1
  * Tested up to:      6.9
  * Author:            Ahmed Ait Attman <aitattman@outlook.com>
  * Author URI:        https://aitattman.pages.dev
- * Plugin URI:        https://github.com/AitAttman/ait-blocks
+ * Plugin URI:        https://github.com/AitAttman/aitattman-blocks
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       ait-blocks
+ * Text Domain:       aitattman-blocks
  * Domain Path:       /languages
  *
  */
 
-if (! defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
 	/**
 	 * Exit if accessed directly.
 	 */

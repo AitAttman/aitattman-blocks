@@ -1,7 +1,7 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "aitattman/sidepanel",
+	"name": "aitattman-blocks/sidepanel",
 	"version": "0.1.0",
 	"title": "Side Panel",
 	"category": "widgets",
@@ -30,7 +30,7 @@
 			"padding": true
 		}
 	},
-	"textdomain": "ait-blocks",
+	"textdomain": "aitattman-blocks",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"viewStyle": "file:./view.css",
