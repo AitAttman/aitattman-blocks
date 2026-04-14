@@ -168,7 +168,7 @@ endif;
 					endfor;
 					if ( $current_page ) :
 						?>
-						<li class="current"><span><?php echo esc_html( $current_page ); ?>/span></li>
+						<li class="current"><span><?php echo esc_html( $current_page ); ?></span></li>
 					<?php
 					endif;
 					for ( $i = $current_page + 1; ( $i <= $total_pages ) && $i < ( $current_page + 4 ); $i++ ) :

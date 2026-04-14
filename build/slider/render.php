@@ -45,7 +45,7 @@ foreach ( $attributes as $k => $v ) {
 	<?php do_action( 'ait_blocks_slider_before', $attributes['anchor'] ?? '' ); ?>
 	<div
 		<?php
-		echo esc_attr(
+		echo wp_kses_data(
 			get_block_wrapper_attributes(
 				array(
 					'id'    => $attributes['anchor'] ?? null,
@@ -54,7 +54,7 @@ foreach ( $attributes as $k => $v ) {
 			)
 		);
 		?>
-		<?php echo esc_attr( implode( ' ', $data_attributes ) ); ?>>
+		<?php echo wp_kses_data( implode( ' ', $data_attributes ) ); ?>>
 		<div class="slides">
 			<?php do_action( 'ait_blocks_slider_slides', $attributes['anchor'] ?? '' ); ?>
 			<?php
