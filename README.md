@@ -24,7 +24,7 @@ navigation menu.
 - Slider
 - Query Posts
 - Search Box
-- Sidepanel
+- Side Panel
 - Button
 - Theme Controllers
 

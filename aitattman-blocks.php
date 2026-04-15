@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       AitAttman Blocks
  * Description:       Some essential custom blocks for the Gutenberg Editor to expand WordPress site functionality.
- * Version:           1.3.0
+ * Version:           1.3.1
  * Requires at least: 6.4
  * Requires PHP:      8.1
  * Tested up to:      6.9

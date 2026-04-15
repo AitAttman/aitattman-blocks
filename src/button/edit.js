@@ -31,7 +31,6 @@ import {
 	ToggleControl,
 } from "@wordpress/components";
 import { createElement, useEffect, useRef, useState } from "react";
-import "./editor.scss";
 
 /**
  * The edit function describes the structure of your block in the context of the

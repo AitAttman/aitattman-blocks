@@ -20,7 +20,6 @@ import { InspectorControls, useBlockProps } from "@wordpress/block-editor";
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
 import { PanelBody, TextareaControl } from "@wordpress/components";
-import "./editor.scss";
 import Switcher from "./switcher";
 
 /**
